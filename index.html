@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hanters Plants - Главная. Промежуточное грейдирование</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@700&display=swap"
+          rel="stylesheet">
+</head>
+<body class="page_body">
+<h1 class="visually-hidden">Магазин хищных растений Hanters Plants</h1>
+<header class="header">
+    <nav class="main_nav">
+        <a class="header_logo">
+            <img src="img/logo.png" width="120" height="49" alt="Hanters Plants">
+        </a>
+        <div class="footer_right">
+            <ul class="main_menu">
+                <li class="menu_item">
+                    <a href="#catalog">каталог</a>
+                </li>
+                <li class="menu_item">
+                    <a href="#features">преимущества</a>
+                </li>
+            </ul>
+            <a class="btn btn-red btn_order" href="#order">заказать</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="promo">
+        <h2 class="visually-hidden">Огромный выбор хищных растений</h2>
+        <div class="promo_slider">
+            <div class="slider_images">
+            </div>
+            <div class="slider_block">
+                <p class="slider_text">Только у нас огромный выбор хищных растений</p>
+                <div class="slider_controls">
+                    <button type="button" class="slider_prev">
+                        <svg width="31" height="16" viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.292894 7.53557C-0.0976295 7.92609 -0.0976295 8.55926 0.292894 8.94978L6.65686 15.3137C7.04738 15.7043 7.68055 15.7043 8.07107 15.3137C8.46159 14.9232 8.46159 14.2901 8.07107 13.8995L2.41422 8.24268L8.07107 2.58582C8.46159 2.1953 8.46159 1.56213 8.07107 1.17161C7.68055 0.781084 7.04738 0.781084 6.65686 1.17161L0.292894 7.53557ZM31 7.24268L1 7.24268V9.24268L31 9.24268V7.24268Z"/>
+                        </svg>
+                    </button>
+                    <div class="slider_dots">
+                        <a class="slider_dot">
+                            <svg width="15" height="15" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.728516" y="10.6066" width="15" height="15"
+                                      transform="rotate(-45 0.728516 10.6066)"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <button type="button" class="slider_next">
+                        <svg width="31" height="16" viewBox="0 0 31 16" xmlns="http://www.w3.org/2000/svg"
+                             style="transform: rotate(180deg);">
+                            <path d="M0.292894 7.53557C-0.0976295 7.92609 -0.0976295 8.55926 0.292894 8.94978L6.65686 15.3137C7.04738 15.7043 7.68055 15.7043 8.07107 15.3137C8.46159 14.9232 8.46159 14.2901 8.07107 13.8995L2.41422 8.24268L8.07107 2.58582C8.46159 2.1953 8.46159 1.56213 8.07107 1.17161C7.68055 0.781084 7.04738 0.781084 6.65686 1.17161L0.292894 7.53557ZM31 7.24268L1 7.24268V9.24268L31 9.24268V7.24268Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog" id="catalog">
+        <h2 class="visually-hidden">Каталог хищных растений</h2>
+        <form class="catalog_form" action="" method="post">
+            <h3 class="visually-hidden">Фильтры поиска</h3>
+            <fieldset class="filter_group">
+                <legend class="filter_legend">Цена</legend>
+                <label for="min_price">от</label>
+                <input type="text" name="min_price" id="min_price" placeholder="500">
+                <label for="max_price">до</label>
+                <input type="text" name="max_price" id="max_price" placeholder="3500">
+            </fieldset>
+            <fieldset class="filter_group">
+                <legend class="filter_legend">Расположение</legend>
+                <ul class="filter_list">
+                    <li class="filter_item">
+                        <input type="checkbox" name="table" id="table" checked>
+                        <label for="table">настольное</label>
+                    </li>
+                    <li class="filter_item">
+                        <input type="checkbox" name="table" id="floor">
+                        <label for="floor">напольное</label>
+                    </li>
+                    <li class="filter_item">
+                        <input type="checkbox" name="table" id="haggle">
+                        <label for="haggle">подвесное</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="filter_group">
+                <legend class="filter_legend">Полив</legend>
+                <ul class="filter_list">
+                    <li class="filter_item">
+                        <input type="radio" id="lotwater" name="water" checked>
+                        <label for="lotwater">влаголюбивые</label>
+                    </li>
+                    <li class="filter_item">
+                        <input type="radio" id="medwater" name="water">
+                        <label for="medwater">умеренный</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="filter_group">
+                <legend class="filter_legend">Освещение</legend>
+                <ul class="filter_list">
+                    <li class="filter_item">
+                        <input type="radio" id="medlight" name="light" checked>
+                        <label for="medlight">полутень</label>
+                    </li>
+                    <li class="filter_item">
+                        <input type="radio" id="lotlight" name="light">
+                        <label for="lotlight">яркое</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button class="btn btn-red" type="submit">показать</button>
+            <button class="btn btn-out" type="button">сбросить</button>
+        </form>
+        <ul class="catalog-list">
+            <li class="catalog_item">
+                <img src="img/catalog1.jpg" alt="Росянка" width="370" height="225">
+                <h3 class="item_name">Росянка</h3>
+                <p class="item_descr">Бесстебельное насекомоядное растение. Встречается на всех континентах кроме
+                    Антарктиды.</p>
+                <div class="item_order">
+                    <a class="btn btn-red" href="#">заказать</a>
+                </div>
+            </li>
+            <li class="catalog_item">
+                <img src="img/catalog2.jpg" alt="Венера Мухоловка" width="370" height="225">
+                <h3 class="item_name">Венера Мухоловка</h3>
+                <p class="item_descr">Одним из самых популярных цветов-хищников, произрастающее
+                    в Северной Америке. </p>
+                <div class="item_order">
+                    <a class="btn btn-red" href="#">заказать</a>
+                </div>
+            </li>
+            <li class="catalog_item">
+                <img src="img/catalog3.jpg" alt="Непеитес" width="370" height="225">
+                <h3 class="item_name">Непеитес</h3>
+                <p class="item_descr">Самое экзотическое и оригинальное комнатное насекомоядное растение, которое вы
+                    найдете.</p>
+                <div class="item_order">
+                    <a class="btn btn-red" href="#">заказать</a>
+                </div>
+
+            </li>
+            <li class="catalog_item">
+                <img src="img/catalog4.jpg" alt="Саррацения" width="370" height="225">
+                <h3 class="item_name">Саррацения</h3>
+                <p class="item_descr">Необычное растение произошедшие из влажных торфяных мест Северной и Южной
+                    Америке.</p>
+                <div class="item_order">
+                    <a class="btn btn-red" href="#">заказать</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="features" id="features">
+        <h2 class="features_header">Почему мы?</h2>
+        <ul class="features_list">
+            <li class="feature_item">
+                <h3 class="feature_header">Широкий ассортимент</h3>
+                <p class="feature_text">Огромный выбор разнообразных растений на любой вкус.</p>
+            </li>
+            <li class="feature_item">
+                <h3 class="feature_header">Бесплатная Доставка</h3>
+                <p class="feature_text">Бесплатная доставка в пределах города в день заказа.</p>
+            </li>
+            <li class="feature_item">
+                <h3 class="feature_header">Программа скидок</h3>
+                <p class="feature_text">Вступайте в наш клуб постоянных покупателей и получайте скидки.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="order" id="order">
+        <div class="order_block">
+            <div class="order_title">
+                <h2 class="order_header">Оставьте свою заяву</h2>
+                <p class="order_text">Наши опытные консультанты свяжутся с вами в течение часа и помогут подобрать
+                    растения
+                    под ваши запросы.</p>
+            </div>
+            <form action="" method="post" class="order_form">
+                <label for="plant_name">Выберите растение</label>
+                <select name="plant_name" id="plant_name" title="Выберите растение">
+                    <option>Росянка</option>
+                    <option>Венера Мухоловка</option>
+                    <option>Непеитес</option>
+                    <option>Саррацения</option>
+                </select>
+                <label for="name">Ваше имя*</label>
+                <input type="text" name="name" id="name" placeholder="Мирослава">
+                <label for="phone">Телефон*</label>
+                <input type="tel" name="phone" id="phone" placeholder="+7 (999) 111 11 11">
+                <label for="email">E-mail*</label>
+                <input type="email" name="email" id="email" placeholder="miroslava97@gmail.ru">
+                <button type="submit" class="btn btn-red">заказать</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <nav class="footer_nav">
+        <div class="footer_top">
+            <a><img src="img/logo.png" alt="Hanters Plants" width="120" height="49"></a>
+            <ul class="footer_menu">
+                <li class="menu_item"><a href="#catalog">каталог</a></li>
+                <li class="menu_item"><a href="#features">преимущества</a></li>
+                <li class="menu_item"><a href="#order">заказать</a></li>
+            </ul>
+        </div>
+        <div class="footer_bottom">
+            <p class="copyright">© Hanters Plants 2020</p>
+            <ul class="social_menu">
+                <li class="menu_item"><a href="#">
+                    <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0)">
+                            <path d="M33.9668 10.2021C33.8871 8.44867 33.595 7.24321 33.1765 6.19867C32.7447 5.08991 32.0806 4.09724 31.2104 3.27203C30.3601 2.43397 29.3306 1.78277 28.2015 1.37029C27.1191 0.964103 25.8836 0.680554 24.077 0.603246C22.257 0.51939 21.6792 0.5 17.0631 0.5C12.4469 0.5 11.8691 0.51939 10.0558 0.596699C8.24929 0.674007 7.00731 0.957807 5.93137 1.36374C4.78875 1.78277 3.766 2.42742 2.91578 3.27203C2.05233 4.09724 1.38165 5.09646 0.956413 6.19237C0.53792 7.24321 0.245779 8.44213 0.166128 10.1955C0.0797311 11.9621 0.0597534 12.5229 0.0597534 17.0032C0.0597534 21.4836 0.0797311 22.0444 0.159382 23.8044C0.239033 25.5578 0.531434 26.7632 0.949926 27.8078C1.38165 28.9165 2.05233 29.9092 2.91578 30.7344C3.766 31.5725 4.79549 32.2237 5.92462 32.6362C7.00731 33.0423 8.24255 33.3259 10.0494 33.4032C11.8624 33.4808 12.4404 33.4999 17.0566 33.4999C21.6727 33.4999 22.2505 33.4808 24.0638 33.4032C25.8704 33.3259 27.1123 33.0423 28.1883 32.6362C30.4733 31.7787 32.2798 30.0253 33.1632 27.8078C33.5815 26.7569 33.8739 25.5578 33.9535 23.8044C34.0332 22.0444 34.0532 21.4836 34.0532 17.0032C34.0532 12.5229 34.0464 11.9621 33.9668 10.2021ZM30.905 23.6754C30.8318 25.2871 30.5529 26.1574 30.3204 26.7375C29.7491 28.1752 28.5736 29.3162 27.0924 29.8707C26.4946 30.0963 25.5915 30.367 23.9375 30.4378C22.1441 30.5153 21.6063 30.5345 17.0698 30.5345C12.5333 30.5345 11.9887 30.5153 10.2019 30.4378C8.54143 30.367 7.64477 30.0963 7.047 29.8707C6.3099 29.6063 5.63897 29.1872 5.09438 28.6393C4.52982 28.1042 4.09809 27.4595 3.82567 26.7441C3.5932 26.1639 3.31429 25.2871 3.24139 23.682C3.16148 21.9414 3.14176 21.4191 3.14176 17.0161C3.14176 12.613 3.16148 12.0844 3.24139 10.3504C3.31429 8.73877 3.5932 7.86848 3.82567 7.28829C4.09809 6.57262 4.52982 5.92167 5.10113 5.39285C5.6522 4.84489 6.31639 4.42586 7.05375 4.1617C7.65152 3.93607 8.55493 3.66537 10.2087 3.59435C12.002 3.51705 12.5401 3.49766 17.0763 3.49766C21.6195 3.49766 22.1574 3.51705 23.9442 3.59435C25.6047 3.66537 26.5013 3.93607 27.0991 4.1617C27.8362 4.42586 28.5072 4.84489 29.0517 5.39285C29.6163 5.92796 30.048 6.57262 30.3204 7.28829C30.5529 7.86848 30.8318 8.74506 30.905 10.3504C30.9846 12.091 31.0046 12.613 31.0046 17.0161C31.0046 21.4191 30.9846 21.9349 30.905 23.6754Z"/>
+                            <path d="M17.063 8.526C12.2412 8.526 8.32892 12.3229 8.32892 17.0032C8.32892 21.6836 12.2412 25.4805 17.063 25.4805C21.8852 25.4805 25.7972 21.6836 25.7972 17.0032C25.7972 12.3229 21.8852 8.526 17.063 8.526ZM17.063 22.5022C13.9349 22.5022 11.3974 20.0397 11.3974 17.0032C11.3974 13.9668 13.9349 11.5043 17.063 11.5043C20.1915 11.5043 22.7287 13.9668 22.7287 17.0032C22.7287 20.0397 20.1915 22.5022 17.063 22.5022Z"/>
+                            <path d="M28.1818 8.19084C28.1818 9.28374 27.2688 10.1699 26.1425 10.1699C25.0165 10.1699 24.1035 9.28374 24.1035 8.19084C24.1035 7.09769 25.0165 6.21179 26.1425 6.21179C27.2688 6.21179 28.1818 7.09769 28.1818 8.19084Z"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="34" height="33" fill="white" transform="translate(0 0.5)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a></li>
+                <li class="menu_item"><a href="#">
+                    <svg width="34" height="34" viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M31.1614 1.51514H2.80385C1.83285 1.5157 1.0457 2.28008 1.0459 3.22289V30.7464C1.04648 31.6888 1.83402 32.4528 2.8054 32.4526H18.0729V20.4885H13.9329V15.8056H18.0729V12.3593C18.0729 8.36278 20.5867 6.18748 24.2597 6.18748C26.0191 6.18748 27.5309 6.31475 27.9716 6.37159V10.5486H25.4387C23.4403 10.5486 23.0533 11.4703 23.0533 12.8231V15.8056H27.8315L27.2089 20.4885H23.0533V32.4526H31.1614C32.133 32.4528 32.9207 31.6886 32.9209 30.7456C32.9209 30.7454 32.9209 30.7453 32.9209 30.7449V3.22138C32.9205 2.27894 32.1328 1.51495 31.1614 1.51514Z"/>
+                    </svg>
+                </a></li>
+                <li class="menu_item"><a href="#">
+                    <svg width="40" height="41" viewBox="0 0 40 41" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.9578 11.1271C37.5256 9.52058 36.259 8.25418 34.6527 7.82159C31.7182 7.01868 19.98 7.01868 19.98 7.01868C19.98 7.01868 8.24226 7.01868 5.30777 7.79115C3.73238 8.22328 2.43484 9.52081 2.00272 11.1271C1.23047 14.0614 1.23047 20.1467 1.23047 20.1467C1.23047 20.1467 1.23047 26.2626 2.00272 29.1662C2.4353 30.7725 3.70148 32.0389 5.308 32.4715C8.27316 33.2746 19.9805 33.2746 19.9805 33.2746C19.9805 33.2746 31.7182 33.2746 34.6527 32.5021C36.2592 32.0698 37.5256 30.8034 37.9582 29.1971C38.7302 26.2626 38.7302 20.1776 38.7302 20.1776C38.7302 20.1776 38.7611 14.0614 37.9578 11.1271ZM16.2428 25.7684V14.5249L26.0037 20.1467L16.2428 25.7684Z"/>
+                    </svg>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
